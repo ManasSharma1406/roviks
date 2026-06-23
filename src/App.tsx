@@ -381,7 +381,7 @@ export default function App() {
   const isMobile = useIsMobile();
 
   // React State driven by scroll
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const scene1Ref = useRef<HTMLDivElement>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [currentHash, setCurrentHash] = useState(window.location.hash);
   const [cartCount, setCartCount] = useState(0);
@@ -440,9 +440,7 @@ export default function App() {
   const scrollProgressRef = useRef(0);
 
   // Synchronize Scroll Progress Ref with State
-  useEffect(() => {
-    scrollProgressRef.current = scrollProgress;
-  }, [scrollProgress]);
+
 
   // Listen for hash routing change
   useEffect(() => {
@@ -458,7 +456,6 @@ export default function App() {
     const isHome = currentHash === '' || currentHash === '#';
     if (isHome) {
       window.scrollTo(0, 0);
-      setScrollProgress(0);
       scrollProgressRef.current = 0;
     }
   }, [currentHash]);
@@ -504,7 +501,7 @@ export default function App() {
       const scrollHeight = containerRef.current.scrollHeight;
       const viewportHeight = window.innerHeight;
       const progress = window.scrollY / (scrollHeight - viewportHeight);
-      setScrollProgress(clamp(progress, 0, 1));
+      scrollProgressRef.current = clamp(progress, 0, 1);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -641,6 +638,12 @@ export default function App() {
         portalRef.current.style.opacity = `${opacity}`;
       }
 
+      if (scene1Ref.current) {
+        const s1Opacity = clamp(1 - sp / 0.22, 0, 1);
+        scene1Ref.current.style.opacity = `${s1Opacity}`;
+        scene1Ref.current.style.pointerEvents = s1Opacity > 0.05 ? 'auto' : 'none';
+      }
+
 
 
       animId = requestAnimationFrame(update);
@@ -661,7 +664,7 @@ export default function App() {
   }, [entranceDone]);
 
   // Scene 1 & 2 opacity values
-  const scene1Opacity = clamp(1 - scrollProgress / 0.22, 0, 1);
+
 
   const isInnerPage = currentHash === '#shop' ||
     currentHash === '#collection' ||
@@ -1324,12 +1327,11 @@ export default function App() {
           {/* SCENE 1 UI / SHOP VIEW SWITCHER */}
           {showLanding && (
             <div
+              ref={scene1Ref}
               style={{
                 position: 'absolute',
                 inset: 0,
                 zIndex: 20,
-                opacity: scene1Opacity,
-                pointerEvents: scene1Opacity > 0.05 ? 'auto' : 'none',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
