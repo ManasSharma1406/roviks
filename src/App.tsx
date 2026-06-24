@@ -1417,7 +1417,7 @@ export default function App() {
                         display: 'inline-block',
                       }}
                     >
-                      SHOP NOW
+                      SH4P N4W
                     </span>
                   </a>
 
