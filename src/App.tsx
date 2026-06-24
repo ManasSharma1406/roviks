@@ -1391,7 +1391,7 @@ export default function App() {
                         filter: 'url(#rough-highlight)',
                         zIndex: -1,
                       }} />
-                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.78em', transform: 'translateY(-5px)' }}>Ordinary Clothes<span style={{ fontFamily: "'DK Astromonkey', sans-serif" }}>?</span></span>
+                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.78em', transform: 'translateY(-5px)' }}>Ordinary Clothes</span>
                     </span>
                     <span>Upgrade Your Style.</span>
                   </h1>
