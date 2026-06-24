@@ -1365,7 +1365,7 @@ export default function App() {
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      gap: '3px',
+                      gap: '16px',
                     }}
                   >
                     <span>Still Wearing</span>
@@ -1374,8 +1374,8 @@ export default function App() {
                       display: 'inline-flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      padding: '8px 12px 10px 12px',
-                      margin: '12px 0',
+                      padding: '2px 16px',
+                      margin: '0',
                       color: '#ffffff',
                       textShadow: 'none',
                       zIndex: 1,
@@ -1389,17 +1389,18 @@ export default function App() {
                         filter: 'url(#rough-highlight)',
                         zIndex: -1,
                       }} />
-                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.65em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
+                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.85em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
                     </span>
                     <span>Upgrade Your Style.</span>
                   </h1>
-                  <a
+                    <a
                     href="#shop"
                     style={{
                       display: 'inline-flex',
                       flexDirection: 'row',
-                      alignItems: 'flex-end',
-                      marginTop: '100px',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      marginTop: '50px',
                       cursor: 'pointer',
                       textDecoration: 'none',
                     }}
@@ -1407,14 +1408,14 @@ export default function App() {
                     <span
                       style={{
                         fontFamily: "'DK Astromonkey', sans-serif",
-                        fontSize: 'clamp(23px, 11vw, 69px)',
-                        color: '#000000',
+                        fontSize: 'clamp(18px, 8vw, 36px)',
+                        color: '#ffffff',
+                        backgroundColor: '#000000',
+                        padding: '14px 40px',
+                        borderRadius: '40px',
                         textTransform: 'uppercase',
-                        textShadow: '0 2px 10px rgba(255, 255, 255, 0.8)',
-                        bottom: '10px',
-                        marginBottom: '-51px',
-                        position: 'relative',
                         display: 'inline-block',
+                        boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
                       }}
                     >
                       $HOP NOW
