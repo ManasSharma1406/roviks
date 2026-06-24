@@ -1417,7 +1417,7 @@ export default function App() {
                         display: 'inline-block',
                       }}
                     >
-                      SH4P N4W
+                      $HOP NOW
                     </span>
                   </a>
 
@@ -1487,7 +1487,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'DK Astromonkey', sans-serif",
+                        fontFamily: "'Instrument Serif', serif",
                         fontSize: 'clamp(62px, 9vw, 86px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',
@@ -1566,7 +1566,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'DK Astromonkey', sans-serif",
+                        fontFamily: "'Instrument Serif', serif",
                         fontSize: 'clamp(70px, 6vw, 90px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',
