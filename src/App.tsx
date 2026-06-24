@@ -1423,8 +1423,8 @@ export default function App() {
                         alt=""
                         style={{
                           position: 'absolute',
-                          top: '25%',
-                          left: '53%',
+                          top: '50%',
+                          left: '50%',
                           transform: 'translate(-50%, -50%)',
                           width: '205%',
                           height: '421%',
