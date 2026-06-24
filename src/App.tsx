@@ -1359,13 +1359,13 @@ export default function App() {
                       fontSize: 'clamp(46px, 9.5vw, 44px)',
                       letterSpacing: '0.03em',
                       color: '#000000',
-                      lineHeight: '1.0',
+                      lineHeight: '1.8',
                       whiteSpace: 'normal',
                       textShadow: '0 4px 20px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.5)',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      gap: '4px',
+                      gap: '16px',
                       position: 'relative',
                       top: '40px',
                     }}
@@ -1393,7 +1393,7 @@ export default function App() {
                       }} />
                       <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.78em', transform: 'translateY(-5px)' }}>Ordinary Clothes</span>
                     </span>
-                    <span style={{ marginTop: '-5px' }}>Upgrade Your Style.</span>
+                    <span style={{ marginTop: '-45px' }}>Upgrade Your Style.</span>
                   </h1>
                     <a
                     href="#shop"
