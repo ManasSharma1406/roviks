@@ -1487,7 +1487,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Instrument Serif', serif",
+                        fontFamily: "'Against Regular', sans-serif",
                         fontSize: 'clamp(62px, 9vw, 86px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',
@@ -1566,8 +1566,8 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Instrument Serif', serif",
-                        fontSize: 'clamp(78px, 6.5vw, 115px)',
+                        fontFamily: "'Against Regular', sans-serif",
+                        fontSize: 'clamp(70px, 6vw, 90px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',
                         mixBlendMode: 'difference',
