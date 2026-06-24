@@ -1359,13 +1359,15 @@ export default function App() {
                       fontSize: 'clamp(46px, 9.5vw, 44px)',
                       letterSpacing: '0.03em',
                       color: '#000000',
-                      lineHeight: '1.2',
+                      lineHeight: '1.8',
                       whiteSpace: 'normal',
                       textShadow: '0 4px 20px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.5)',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
                       gap: '16px',
+                      position: 'relative',
+                      top: '40px',
                     }}
                   >
                     <span>Still Wearing</span>
@@ -1374,8 +1376,8 @@ export default function App() {
                       display: 'inline-flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      padding: '2px 16px',
-                      margin: '0',
+                      padding: '6px 18px',
+                      margin: '0px',
                       color: '#ffffff',
                       textShadow: 'none',
                       zIndex: 1,
@@ -1389,7 +1391,7 @@ export default function App() {
                         filter: 'url(#rough-highlight)',
                         zIndex: -1,
                       }} />
-                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.85em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
+                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.78em', transform: 'translateY(-5px)' }}>Ordinary Clothes?</span>
                     </span>
                     <span>Upgrade Your Style.</span>
                   </h1>
@@ -1400,7 +1402,7 @@ export default function App() {
                       flexDirection: 'row',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      marginTop: '50px',
+                      marginTop: '82px',
                       cursor: 'pointer',
                       textDecoration: 'none',
                     }}
@@ -1411,7 +1413,7 @@ export default function App() {
                         fontSize: 'clamp(18px, 8vw, 36px)',
                         color: '#ffffff',
                         backgroundColor: '#000000',
-                        padding: '14px 40px',
+                        padding: '0px 16px',
                         borderRadius: '40px',
                         textTransform: 'uppercase',
                         display: 'inline-block',
