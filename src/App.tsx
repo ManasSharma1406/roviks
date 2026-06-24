@@ -1406,7 +1406,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Blacklisted', sans-serif",
+                        fontFamily: "'Against Regular', sans-serif",
                         fontSize: 'clamp(23px, 11vw, 69px)',
                         color: '#000000',
                         textTransform: 'uppercase',
