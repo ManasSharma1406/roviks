@@ -1406,7 +1406,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Against Regular', sans-serif",
+                        fontFamily: "'DK Astromonkey', sans-serif",
                         fontSize: 'clamp(23px, 11vw, 69px)',
                         color: '#000000',
                         textTransform: 'uppercase',
@@ -1487,7 +1487,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Against Regular', sans-serif",
+                        fontFamily: "'DK Astromonkey', sans-serif",
                         fontSize: 'clamp(62px, 9vw, 86px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',
@@ -1566,7 +1566,7 @@ export default function App() {
                   >
                     <span
                       style={{
-                        fontFamily: "'Against Regular', sans-serif",
+                        fontFamily: "'DK Astromonkey', sans-serif",
                         fontSize: 'clamp(70px, 6vw, 90px)',
                         color: '#ffffff',
                         textTransform: 'uppercase',

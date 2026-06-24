@@ -37,6 +37,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DK Astromonkey';
+  src: url('/DK_Astromonkey.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /* Global Reset */
 * {
