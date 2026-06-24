@@ -1393,9 +1393,9 @@ export default function App() {
                       }} />
                       <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.78em', transform: 'translateY(-5px)' }}>Ordinary Clothes</span>
                     </span>
-                    <span style={{ marginTop: '-45px' }}>Upgrade Your Style.</span>
+                    <span style={{ marginTop: '-16px' }}>Upgrade Your Style.</span>
                   </h1>
-                    <a
+                  <a
                     href="#shop"
                     style={{
                       display: 'inline-flex',
