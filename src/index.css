@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Hogfish DEMO';
+  src: url('/Hogfish DEMO.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oups';
+  src: url('/Oups.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blacklisted';
+  src: url('/Blacklisted.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* Global Reset */
 * {
   margin: 0;

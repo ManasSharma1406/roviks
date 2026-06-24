@@ -639,8 +639,11 @@ export default function App() {
       }
 
       if (scene1Ref.current) {
-        const s1Opacity = clamp(1 - sp / 0.22, 0, 1);
+        const progress = clamp(sp / 0.22, 0, 1);
+        const s1Opacity = clamp((1 - progress) * 1.5, 0, 1); // Stay visible longer, fade near end
+        const blurAmount = progress * 25; // Blur up to 25px
         scene1Ref.current.style.opacity = `${s1Opacity}`;
+        scene1Ref.current.style.filter = `blur(${blurAmount}px)`;
         scene1Ref.current.style.pointerEvents = s1Opacity > 0.05 ? 'auto' : 'none';
       }
 
@@ -1289,7 +1292,7 @@ export default function App() {
                   <div className="flex flex-col gap-4 overflow-y-auto pr-2 pb-8 no-scrollbar">
                     <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white hover:text-white/80 transition-colors">ALL PRODUCTS</a>
                     <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white hover:text-white/80 transition-colors">BEST SELLER</a>
-                    
+
                     <div className="flex flex-col mt-2">
                       <a href="#collection" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white flex justify-between items-center hover:text-white/80 transition-colors border-t border-b border-white/10 py-4">
                         NEW ARRIVALS
@@ -1312,7 +1315,7 @@ export default function App() {
                     <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white hover:text-white/80 transition-colors mt-2">SUMMER COLLECTION</a>
                     <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white hover:text-white/80 transition-colors">CONTACT US</a>
                     <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium tracking-wide text-white hover:text-white/80 transition-colors">TRACK MY ORDER</a>
-                    
+
                     {/* Promo Image Area */}
                     <div className="mt-8 relative w-full flex justify-center pb-12">
                       <img src="/assets/shadow_7.png" alt="Best Seller" className="w-[85%] max-w-[280px] h-auto object-contain opacity-90 transition-transform duration-700 hover:scale-105" />
@@ -1352,9 +1355,8 @@ export default function App() {
                 <div>
                   <h1
                     style={{
-                      fontFamily: "'Instrument Serif', serif",
+                      fontFamily: "'Hogfish DEMO', sans-serif",
                       fontSize: 'clamp(46px, 9.5vw, 44px)',
-                      fontStyle: 'italic',
                       letterSpacing: '0.03em',
                       color: '#000000',
                       lineHeight: '1.2',
@@ -1369,8 +1371,10 @@ export default function App() {
                     <span>Still Wearing</span>
                     <span style={{
                       position: 'relative',
-                      display: 'inline-block',
-                      padding: '4px 12px',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '8px 12px 10px 12px',
                       margin: '0',
                       color: '#ffffff',
                       textShadow: 'none',
@@ -1385,7 +1389,7 @@ export default function App() {
                         filter: 'url(#rough-highlight)',
                         zIndex: -1,
                       }} />
-                      <i style={{ fontFamily: "'Instrument Serif', serif" }}>Ordinary Clothes?</i>
+                      <span style={{ fontFamily: "'Hogfish DEMO', sans-serif", fontSize: '0.65em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
                     </span>
                     <span>Upgrade Your Style.</span>
                   </h1>
@@ -1395,20 +1399,18 @@ export default function App() {
                       display: 'inline-flex',
                       flexDirection: 'row',
                       alignItems: 'flex-end',
-                      gap: '-10px',
-                      marginTop: '67px',
+                      marginTop: '100px',
                       cursor: 'pointer',
                       textDecoration: 'none',
                     }}
                   >
                     <span
                       style={{
-                        fontFamily: "'Instrument Serif', serif",
-                        fontSize: 'clamp(50px, 11vw, 70px)',
+                        fontFamily: "'Blacklisted', sans-serif",
+                        fontSize: 'clamp(23px, 11vw, 69px)',
                         color: '#000000',
                         textTransform: 'uppercase',
                         textShadow: '0 2px 10px rgba(255, 255, 255, 0.8)',
-                        paddingBottom: '-25px',
                         bottom: '10px',
                         marginBottom: '-51px',
                         position: 'relative',
@@ -1416,16 +1418,16 @@ export default function App() {
                       }}
                     >
                       SHOP NOW
-                      <img 
-                        src="/assets/circle.png" 
+                      <img
+                        src="/assets/circle.png"
                         alt=""
                         style={{
                           position: 'absolute',
                           top: '40%',
                           left: '53%',
                           transform: 'translate(-50%, -50%)',
-                          width: '195%',
-                          height: '373%',
+                          width: '205%',
+                          height: '421%',
                           maxWidth: 'none',
                           objectFit: 'fill',
                           pointerEvents: 'none',
