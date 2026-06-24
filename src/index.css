@@ -44,6 +44,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gondens Demo';
+  src: url('/gondens-demo.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 /* Global Reset */

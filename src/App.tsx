@@ -1355,7 +1355,7 @@ export default function App() {
                 <div>
                   <h1
                     style={{
-                      fontFamily: "'Keighley', serif",
+                      fontFamily: "'Gondens Demo', sans-serif",
                       fontSize: 'clamp(46px, 9.5vw, 44px)',
                       letterSpacing: '0.03em',
                       color: '#000000',
@@ -1389,7 +1389,7 @@ export default function App() {
                         filter: 'url(#rough-highlight)',
                         zIndex: -1,
                       }} />
-                      <span style={{ fontFamily: "'Keighley', serif", fontSize: '0.65em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
+                      <span style={{ fontFamily: "'Gondens Demo', sans-serif", fontSize: '0.65em', transform: 'translateY(2px)' }}>Ordinary Clothes?</span>
                     </span>
                     <span>Upgrade Your Style.</span>
                   </h1>
