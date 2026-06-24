@@ -1418,23 +1418,6 @@ export default function App() {
                       }}
                     >
                       SHOP NOW
-                      <img
-                        src="/assets/circle.png"
-                        alt=""
-                        style={{
-                          position: 'absolute',
-                          top: '50%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%)',
-                          width: '205%',
-                          height: '421%',
-                          maxWidth: 'none',
-                          objectFit: 'fill',
-                          pointerEvents: 'none',
-                          zIndex: 10,
-                          opacity: 1,
-                        }}
-                      />
                     </span>
                   </a>
 
