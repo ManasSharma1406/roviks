@@ -10,6 +10,13 @@
 }
 
 @font-face {
+  font-family: 'Keighley';
+  src: url('/KeighleyFreeRegular-YqKx4.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Oups';
   src: url('/Oups.otf') format('opentype');
   font-weight: normal;
