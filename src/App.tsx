@@ -1375,7 +1375,7 @@ export default function App() {
                       alignItems: 'center',
                       justifyContent: 'center',
                       padding: '8px 12px 10px 12px',
-                      margin: '0',
+                      margin: '12px 0',
                       color: '#ffffff',
                       textShadow: 'none',
                       zIndex: 1,
@@ -1423,7 +1423,7 @@ export default function App() {
                         alt=""
                         style={{
                           position: 'absolute',
-                          top: '40%',
+                          top: '25%',
                           left: '53%',
                           transform: 'translate(-50%, -50%)',
                           width: '205%',
